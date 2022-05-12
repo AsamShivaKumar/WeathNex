@@ -1,0 +1,11 @@
+{
+  "name": "WeathNex",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "WeathNex is a chrome extension which displays the weather data of the present user's location using openweathermap api and some news articles.The user can also search for the weather of a city/location",
+  "action":{
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  },
+  "permissions": ["geolocation"]
+}

@@ -1,0 +1,259 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 300px;
+}
+
+html{
+  background-color: white;
+}
+
+h2{
+  padding: 5px 0 0 10px;
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: 'Rajdhani',sans-serif;
+  color: #15133C;
+}
+
+.content{
+   width: 400px;
+   height: 300px;
+   box-shadow: 5px 5px 10px black;
+   overflow-y: scroll;
+   background-image: linear-gradient(45deg, #B9F8D3 50%, #40DFEF 50%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.cityInput{
+   width: 300px;
+   margin-top: 10px;
+   border: 0;
+   font-size: 1rem;
+   padding: 5px 10px;
+   border-radius: 5px 0 0 5px;
+   font-family: 'Montserrat', sans-serif;
+   color: black;
+   font-weight: bold;
+}
+
+.cityInput:focus{
+  outline: none;
+}
+
+.inoutDiv{
+  display: flex;
+}
+
+.fa-search{
+  font-size: 1rem !important;
+  background-color: white;
+  margin-left: -4px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: 23.8px;
+  bottom: 1px;
+  margin-right: -15px;
+  position: relative;
+  display: flex;
+  border-radius: 0 5px 5px 0;
+  color: grey;
+  transition: all 0.5s;
+}
+
+.fa-search:hover{
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+
+.cityName{
+  color: white;
+}
+
+.weatherData{
+  width: 350px;
+  height: 220px;
+  border-radius: 5px;
+  position: absolute;
+  left: 23px;
+  top: 50px;
+  border: 2px solid white;
+}
+
+.currWeather{
+  display: flex;
+}
+
+.tempIcon{
+  display: flex;
+  width: 170px;
+  margin: 10px 10px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(5px 5px 10px grey);
+}
+
+.temparature{
+  display: flex;
+  flex-direction: column;
+}
+
+.temparature span{
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.tempIcon::after{
+     content: "";
+     width: 2px;
+     height: 50px;
+     display: inline-block;
+     background-color: #D1D1D1;
+     position: absolute;
+     border-radius: 5px;
+     left: 180px;
+}
+
+.descp {
+  width: 170px;
+  display: flex;
+  align-items: center;
+}
+
+.descp h2 {
+  padding-top: 0;
+}
+
+.descp h2::first-letter{
+  text-transform: uppercase;
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one,.two{
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  font-size: 1rem;
+}
+
+.details span{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  color: black;
+  opacity: 0.5;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one span{
+  margin-right: 20px;
+}
+
+.loader{
+  width: 400px;
+  height: 300px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.loader img{
+  width: 100%;
+  height: 100%;
+}
+
+.load{
+  display: inline-block;
+}
+
+.notFound{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  display: none;
+  background-color: white;
+}
+
+.notFound h2{
+  font-size: 2rem;
+}
+
+.open{
+  display: flex;
+}
+
+.fa-times-circle{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+
+.fa-arrow-circle-left,.fa-arrow-circle-right{
+  position: absolute;
+  top: 140px;
+  font-size: 1.5rem !important;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-arrow-circle-right{
+    left: 378px;
+}
+
+.fa-arrow-circle-left{
+    left: 5px;
+}
+
+.fa-arrow-circle-left:hover,.fa-arrow-circle-right:hover{
+  font-size: 1.5rem;
+  filter: drop-shadow(5px 5px 10px white);
+}
+
+.mapDiv{
+  width: 400px;
+  height: 300px;
+  display: none;
+  background: white;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(15deg, #B9F8D3 50%, #40DFEF 50%);
+}
+
+.displayMap{
+  display: inline-block;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+   visibility: hidden;
+}
