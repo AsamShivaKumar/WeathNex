@@ -59,10 +59,10 @@ document.querySelector(".fa-times-circle").addEventListener("click",function(){
 });
 
 // mapDiv
-document.querySelector(".fa-arrow-circle-right").addEventListener("click", function(){
-         document.querySelector(".mapDiv").classList.add("displayMap");
-});
-
-document.querySelector(".fa-arrow-circle-left").addEventListener("click", function(){
-         document.querySelector(".mapDiv").classList.remove("displayMap");
-});
+// document.querySelector(".fa-arrow-circle-right").addEventListener("click", function(){
+//          document.querySelector(".mapDiv").classList.add("displayMap");
+// });
+//
+// document.querySelector(".fa-arrow-circle-left").addEventListener("click", function(){
+//          document.querySelector(".mapDiv").classList.remove("displayMap");
+// });
